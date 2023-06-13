@@ -1,0 +1,154 @@
+﻿<Window x:Class="azChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:azChat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition />
+
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Column="0" Grid.RowSpan="1000">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF070038" Offset="0" />
+                    <GradientStop Color="#FFBDACE4" Offset="1" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <TextBox Grid.Column="0"  Height="20" VerticalAlignment="Top" Margin="10,10,40,0" Background="#FF817C8E">
+
+        </TextBox>
+
+        <Button Width="23" Height="23" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="8.5" Background="Transparent" BorderBrush="Transparent" >
+
+            <Button.Content>
+                <Image Source="/search-icon.png"/>
+            </Button.Content>
+
+        </Button>
+
+
+        <ListView Grid.Row="0" Grid.ColumnSpan="2" Margin="0,37,571,0" Background="Transparent" BorderBrush="Transparent">
+            <ListViewItem>
+
+                <StackPanel Orientation="Horizontal">
+                    <Border Style="{StaticResource CircleBorderStyle}" Width="54" Height="55">
+                        <Image Source="/pp1.jpg" Stretch="UniformToFill">
+                            <Image.Clip>
+                                <EllipseGeometry RadiusX="25" RadiusY="25" Center="25,25"  />
+                            </Image.Clip>
+                        </Image>
+                    </Border>
+                    <StackPanel>
+                        <Label Content="William S. Meyer"  Foreground="White" FontSize="13"/>
+                        <Label Content="Hello,What are you doing ma.." Foreground="Gray"/>
+                    </StackPanel>
+                </StackPanel>
+            </ListViewItem>
+
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Border Style="{StaticResource CircleBorderStyle}" Width="54" Height="55">
+                        <Image Stretch="UniformToFill" Source="/pp2.jpg">
+                            <Image.Clip>
+                                <EllipseGeometry RadiusX="25" RadiusY="25" Center="25,25"  />
+                            </Image.Clip>
+                        </Image>
+                    </Border>
+                    <StackPanel>
+                        <Label Content="Jeffrey V. Ramirez" Foreground="White" FontSize="13"/>
+                        <Label Content="Can I call you? Are you busy?" Foreground="Gray"/>
+                    </StackPanel>
+                </StackPanel>
+            </ListViewItem>
+
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Border Style="{StaticResource CircleBorderStyle}" Width="54" Height="55">
+                        <Image Stretch="UniformToFill" Source="/pp3.jpg">
+                            <Image.Clip>
+                                <EllipseGeometry RadiusX="25" RadiusY="25" Center="25,25"  />
+                            </Image.Clip>
+                        </Image>
+                    </Border>
+                    <StackPanel>
+                        <Label Content="Regina R. Rencher" Foreground="White" FontSize="13"/>
+                        <Label Content="You have meeting at 12Am" Foreground="Gray"/>
+                    </StackPanel>
+                </StackPanel>
+            </ListViewItem>
+
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Border Style="{StaticResource CircleBorderStyle}" Width="54" Height="55">
+                        <Image Stretch="UniformToFill" Source="/pp4.jpg">
+                            <Image.Clip>
+                                <EllipseGeometry RadiusX="25" RadiusY="25" Center="25,25"  />
+                            </Image.Clip>
+                        </Image>
+                    </Border>
+                    <StackPanel>
+                        <Label Content="Mark Zuckerberg" Foreground="White" FontSize="13"/>
+                        <Label Content="I am hungry. can you buy anything?" Foreground="Gray"/>
+                    </StackPanel>
+                </StackPanel>
+            </ListViewItem>
+
+        </ListView>
+
+        <Grid Grid.Column="1" Background="#FFF1E5E7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Background="#FF1D1744" Content="William S. Meyer" Foreground="White" FontSize="14"/>
+            <Label Grid.Row="0" Width="23" Height="23" HorizontalAlignment="Left" Margin="5,5,10,0" >
+                <Label.Content>
+                    <Image Source="/online-icon.png"/>
+                </Label.Content>
+            </Label>
+            <Label Grid.Row="0" Width="50" Height="25" HorizontalAlignment="Left" Margin="25,5,10,0" Content="online" Foreground="White" FontSize="10"/>
+            <Button Grid.Row="0" Background="#FF1D1744" Width="30" Height="30" HorizontalAlignment="Right" Margin="10" BorderBrush="Transparent">
+                <Button.Content>
+                    <Image Source="/options-icon.png"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Background="#FF1D1744" Width="30" Height="30" HorizontalAlignment="Right" Margin="10,0,50,0" BorderBrush="Transparent">
+                <Button.Content>
+                    <Image Source="/addUser-icon.png"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Background="#FF1D1744" Width="30" Height="30" HorizontalAlignment="Right" Margin="10,0,92,0" BorderBrush="Transparent">
+                <Button.Content>
+                    <Image Source="/video-icon.png"/>
+                </Button.Content>
+            </Button>
+
+
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <Border Style="{StaticResource CircleBorderStyle}" Width="40" Height="45" VerticalAlignment="Bottom">
+                    <Image Stretch="UniformToFill" Source="/pp1New.png">
+                        <Image.Clip>
+                            <EllipseGeometry RadiusX="15" RadiusY="15" Center="15,15"  />
+                        </Image.Clip>
+                    </Image>
+                </Border>
+
+                <TextBlock Height="27" Width="200" VerticalAlignment="Bottom" Margin="10,0,0,13" Text="Hello,What are you doing man?" FontSize="13" Background="#FFBDACE4"/>
+                <Label Content="12:10AM" Width="45" Height="25" VerticalAlignment="Bottom" Margin="-45,0,0,5" FontSize="9"/>
+            </StackPanel>
+
+                <RichTextBox Grid.Row="2"  HorizontalAlignment="Left"  ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+        </Grid>
+
+    </Grid>
+</Window>

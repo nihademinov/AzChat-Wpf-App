@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="addUser-icon.png" />
+    <None Remove="online-icon.png" />
+    <None Remove="options-icon.png" />
+    <None Remove="pp1.jpg" />
+    <None Remove="pp1New.png" />
+    <None Remove="pp2.jpg" />
+    <None Remove="pp3.jpg" />
+    <None Remove="pp4.jpg" />
+    <None Remove="search-icon.png" />
+    <None Remove="video-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="addUser-icon.png" />
+    <Resource Include="online-icon.png" />
+    <Resource Include="options-icon.png" />
+    <Resource Include="pp1.jpg" />
+    <Resource Include="pp1New.png" />
+    <Resource Include="pp2.jpg" />
+    <Resource Include="pp3.jpg" />
+    <Resource Include="pp4.jpg" />
+    <Resource Include="search-icon.png" />
+    <Resource Include="video-icon.png" />
+  </ItemGroup>
+
+</Project>
